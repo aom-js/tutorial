@@ -13,11 +13,11 @@
 
 1. Пример создания API [`api-create`](./1-api-create/readme.md)
 2. Рекомендации организации файлов [`recommendations`](./2-recommendations/readme.md)
-3. Роутеры из схем данных [`schemas-to-controllers`](./3-schemas-to-controllers/readme.md)
-4. Комбинации маршрутов [`routes-combinations`](./4-routes-combinations/readme.md)
-5. Валидация входящих данных [`body-validation`](./5-body-validation/readme.md)
-6. Поиск данных [`query-search`](./6-query-search/)
-7. Общие ответы (рендеры и типовые ошибки) [`common-responses`](./7-common-responses/readme.md)
+3. Общие ответы (рендеры и типовые ошибки) [`common-responses`](./7-common-responses/readme.md)
+4. Роутеры из схем данных [`schemas-to-controllers`](./3-schemas-to-controllers/readme.md)
+5. Комбинации маршрутов [`routes-combinations`](./4-routes-combinations/readme.md)
+6. Валидация входящих данных [`body-validation`](./5-body-validation/readme.md)
+7. Поиск данных [`query-search`](./6-query-search/)
 8. Права доступа и ограничения вызовов [`access-control`](./8-access-control/readme.md)
 
 ## Рекомендации к прочтению

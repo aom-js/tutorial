@@ -40,7 +40,7 @@ export class Items extends DataRoute(schemas.Items) {
   @Summary("Список данных")
   @Use(QueryString.Pager, ItemsQuery.Search, Items.Data)
   @Responses(Items.toJSON(["Список предметов"]))
-  @UseNext(Renders.TotalData)
+  @UseNext(Items.TotalData)
   static async Index(@This() self: Items, @Next() next: NextFunction) {
     return next();
   }

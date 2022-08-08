@@ -300,7 +300,7 @@ export class ReceiptsServices extends CreateDataRoute(schemas.Receipts) {
   @Get()
   @Summary("Список кассовых сервисов")
   @Use(ReceiptsServicesFilter.Search)
-  @UseNext(Renders.TotalData)
+  @UseNext(ReceiptsServices.TotalData)
   static async Index(@This() self: ReceiptsServices, @Next() next: NextFunction) {
     await self.getData();
     return next();
