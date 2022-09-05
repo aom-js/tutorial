@@ -202,7 +202,7 @@ export class Contents extends controllers.Contents.data() {
   // ... Init, Index, Add ...
 }
 
-@Controller() 
+@Controller()
 export class Content extends controllers.Contents.document() {
   // ... Index, Patch, Put, SaveBody...
 }
@@ -224,9 +224,9 @@ export class Contents extends CreateDataRoute(ContentsSchema) {
 }
 ```
 
-## Расширенный рендер значений
+## Рендер значений
 
-Пример, представленный в документе [extended-render](./extended-render.md) позволяет расширять информацию о
+Пример, представленный в документе [post-render](./post-render.md) позволяет расширять информацию о
 возвращаемой структуре данных.
 
 ```ts
