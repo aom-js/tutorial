@@ -91,5 +91,6 @@
 
 Контактные данные:
 
-- почта [mail@scarych.ru](mailto:mail@scarych.ru)
-- телеграм [@scarych](https://t.me/scarych)
+- Discord [`aom.js`](https://discord.gg/8tHT8Ku5ZM)
+- Email [mail@scarych.ru](mailto:mail@scarych.ru)
+- Telegram [@scarych](https://t.me/scarych)

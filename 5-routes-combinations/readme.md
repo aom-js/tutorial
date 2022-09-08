@@ -102,3 +102,29 @@ export class SubDataElem {
 Такие контроллеры как правило состоят только из `middleware`, целью которых является переключения состояния
 документа и реакции на определенные данные. Таким образом, что становится доступно использование общих методов
 и единого контекста.
+
+## Логирование данных
+
+Пример, описанный к файле [`logging`](./logging.md) реализует возможность логировать произвольно
+взятые участки маршрута, отслеживая в том числе время выполнения участка запроса и собираемые на
+нем данные.
+
+```ts
+@Controller()
+@Use(PublicationID.PathID)
+export class Publication {
+  @Get()
+  @Endpoint()
+  @Use(Logger.Attach)
+  @Summary("Информация о публикации")
+  @Responses(PublicationID.toJSON("Публикация"))
+  static async Index(
+    @This(PublicationID) publication: PublicationID,
+    @This(PublicationAttachments) attachments: PublicationAttachments
+  ) {
+    attachments.where = { publicationId: publication._id };
+    await attachments.getData();
+    return { ...publication.document.toJSON(), attachments: attachments.data };
+  }
+}
+```
